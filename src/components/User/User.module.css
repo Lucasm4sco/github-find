@@ -1,0 +1,70 @@
+.user {
+    background-color: #557c93;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user img {
+    width: 100px;
+    height: 100px;
+    border-radius: 75px;
+    border: 1px solid #08203e;
+    margin-bottom: 1rem;
+}
+
+.user .line {
+    margin-top: .5rem;
+    width: 80%;
+    border-color: #08203e;
+}
+
+.user .containerRow {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    gap: 1rem;
+}
+
+.user .containerRow div {
+    flex-grow: 1;
+    min-width: 120px;
+    width: 40%;
+}
+
+.containerRow div span {
+    display: block;
+    padding: .5rem 1rem;
+    background-color: #08203e;
+    border-radius: 1rem;
+    overflow-x: auto;
+    margin-top: .5em;
+}
+
+.containerRow .icon {
+    font-size: 1.1rem;
+    margin-right: .5rem;
+    position: relative;
+    top: .1rem;
+}
+
+.user .link {
+    margin: 2rem 0;
+    width: 80%;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid rgba(21, 51, 87, 0.815);
+    border-radius: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.user .link:hover {
+    transition: background .3s ease;
+    background-color: rgb(178, 215, 243);  
+    color: #08203e;
+}
