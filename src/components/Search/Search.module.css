@@ -39,3 +39,9 @@
     background-color: #557c93;
     cursor: pointer;
 }
+
+@media (max-width: 450px) {
+    .search {
+        padding: 1rem;
+    }
+}
