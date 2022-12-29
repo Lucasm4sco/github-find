@@ -59,7 +59,7 @@ const User = ({
                     </span>
                 </div>
             </div>
-            <Link to={`/repos/${login}`} className={classes.link}>Ver melhores projetos</Link>
+            <Link to={`/repos/${login}`} className={classes.link}>Ver projetos recentes</Link>
         </div>
     )
 }
