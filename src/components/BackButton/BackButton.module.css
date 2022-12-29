@@ -1,0 +1,19 @@
+.back_button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: transparent; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    border: 2px solid rgba(21, 51, 87, 0.815);
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.back_button:hover {
+    transition: all .2s ease;
+    background-color: rgba(21, 51, 87, 0.815);
+}

@@ -1,0 +1,71 @@
+.list_repositories h2 {
+    margin: 1rem 0 2rem;
+}
+
+.list_repositories h2 span {
+    color: rgba(21, 51, 87, 0.815);
+}
+
+.card_repositorie {
+    max-width: 600px;
+    margin: 1rem auto 2rem;
+    padding: 2rem;
+    background-color: #08203e;
+    border: 2px solid #557c93;
+    border-radius: 5px;
+}
+
+.card_repositorie h3 {
+    font-size: 1.2rem;
+}
+
+.card_repositorie .containerRow {
+    margin: 1rem 0 .5rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.containerRow p:first-child {
+    padding: .1rem .5rem;
+    background-color: #67bcca40;
+    border-radius: 2px;
+}
+
+.containerRow p {
+    color: #a0a8f5fa;
+}
+
+.containerRow .icon {
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+} 
+
+.card_repositorie p {
+    margin: 1rem 0;
+    text-align: start;
+}
+
+.card_repositorie .link {
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: 1px solid #557c93;
+    background-color: #051b36 ;
+}
+
+.card_repositorie .link:hover {
+    transition: all .3 ease;
+    background-color: rgba(21, 51, 87, 0.815);
+    color: white;
+}
+
+@media (max-width: 450px) {
+    .card_repositorie {
+        padding: 1rem;
+    }
+}
