@@ -6,6 +6,10 @@
     color: #FFF;
 }
 
+::-webkit-scrollbar { 
+	display: none;
+}
+
 body {
     background: linear-gradient(#557c93, #08203e);
     min-height: 100vh;
