@@ -6,5 +6,6 @@ export type repositoriesProps = {
     language: string;
     full_name: string;
     login: string;
-    stargazers_count: number
+    stargazers_count: number,
+    fork: boolean
 }

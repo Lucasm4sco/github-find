@@ -1,17 +1,30 @@
 import { repositoriesProps } from '../../types/repositories';
 import { BiStar } from 'react-icons/bi';
 import classes from './ListRepositories.module.css';
+import { Dispatch, SetStateAction } from 'react';
 
 type ListRepositoriesProps = {
   userName: string | undefined;
   listRepositories: repositoriesProps[],
-  loading: boolean
+  loading: boolean,
+  showOnlyUserRepositories: boolean,
+  setShowOnlyUserRepositories: Dispatch<SetStateAction<boolean>>
 }
 
-const ListRepositories = ({ userName, listRepositories, loading }: ListRepositoriesProps) => {
+const ListRepositories = ({ userName, listRepositories, loading, showOnlyUserRepositories, setShowOnlyUserRepositories}: ListRepositoriesProps) => {
   return (
     <div className={classes.list_repositories}>
       <h2>Repositórios recentes de: <span>{userName}</span></h2>
+      <p className={classes.check}>
+        Mostrar apenas repositórios criados pelo usuário? 
+        <button 
+          className={showOnlyUserRepositories ? classes.checked : ''} 
+          onClick={() => setShowOnlyUserRepositories(true)}> Sim </button> |  
+        <button 
+          className={showOnlyUserRepositories ? '' : classes.checked}
+          onClick={() => setShowOnlyUserRepositories(false)}
+          >Não</button>
+      </p>
       {loading && <div className='loading'></div>}
       {!loading && !listRepositories.length && <p>Não foram encontrados repositórios.</p>}
       <div className={classes.container_repositories}>
